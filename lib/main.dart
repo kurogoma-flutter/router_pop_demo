@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:router_pop_demo/base_scaffold.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,10 +26,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
+    return BaseScaffold(
+      title: 'Home',
       body: Center(
         child: ElevatedButton(
           child: const Text('Go to Page A'),
